@@ -28,13 +28,13 @@ image_classify <- function(
   keep_data = "true",
   callback = NULL,
   type = "image/jpeg",
-  version = "2016-05-20",
+  version = "2018-03-19",
   accept_language = "en",
   batch_size = 1
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?"
+  service <- "gateway.watsonplatform.net/visual-recognition/api/v3/classify?"
   parameters <- paste(
     c("api_key", "version"),
     c(api_key, version),
@@ -90,12 +90,12 @@ image_detectface <- function(
   keep_data = "true",
   callback = NULL,
   type = "image/jpeg",
-  version = "2016-05-20",
+  version = "2018-03-19",
   batch_size = 1
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/visual-recognition/api/v3/detect_faces?"
+  service <- "gateway.watsonplatform.net/visual-recognition/api/v3/detect_faces?"
   parameters <- paste(
     c("api_key", "version"),
     c(api_key, version),
@@ -147,12 +147,12 @@ image_detecttext <- function(
   keep_data = "true",
   callback = NULL,
   type = "image/jpeg",
-  version = "2016-05-20",
+  version = "2018-03-19",
   batch_size = 1
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/visual-recognition/api/v3/recognize_text?"
+  service <- "gateway.watsonplatform.net/visual-recognition/api/v3/recognize_text?"
   parameters <- paste(
     c("api_key", "version"),
     c(api_key, version),
