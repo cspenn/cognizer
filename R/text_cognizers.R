@@ -34,7 +34,7 @@ text_sentiment <- function(
 ) 
 {  
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/calls/text/TextGetTextSentiment?"
+  service <- "gateway.watsonplatform.net/calls/text/TextGetTextSentiment?"
   parameters <- paste(
     c("apikey", "outputMode", "showSourceText"),
     c(api_key, output_mode, show_source),
@@ -97,7 +97,7 @@ text_keywords <- function(
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/calls/text/TextGetRankedKeywords?"
+  service <- "gateway.watsonplatform.net/calls/text/TextGetRankedKeywords?"
   parameters <- paste(
     c("apikey", "outputMode", "showSourceText",
       "maxRetrieve", "knowledgeGraph", "sentiment"),
@@ -153,7 +153,7 @@ text_emotion <- function(
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/calls/text/TextGetEmotion?"
+  service <- "gateway.watsonplatform.net/calls/text/TextGetEmotion?"
   parameters <- paste(
     c("apikey", "outputMode", "showSourceText"),
     c(api_key, output_mode, show_source),
@@ -207,7 +207,7 @@ text_language <- function(
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/calls/text/TextGetLanguage?"
+  service <- "gateway.watsonplatform.net/calls/text/TextGetLanguage?"
   parameters <- paste(
     c("apikey", "outputMode", "showSourceText"),
     c(api_key, output_mode, show_source),
@@ -283,7 +283,7 @@ text_entity <- function(
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/calls/text/TextGetRankedNamedEntities?"
+  service <- "gateway.watsonplatform.net/calls/text/TextGetRankedNamedEntities?"
   parameters <- paste(
     c("apikey", "outputMode", "showSourceText", "maxRetrieve", "knowledgeGraph",
       "sentiment", "model", "coreference", "disambiguate", "linkedData",
@@ -343,7 +343,7 @@ text_concept <- function(
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/calls/text/TextGetRankedConcepts?"
+  service <- "gateway.watsonplatform.net/calls/text/TextGetRankedConcepts?"
   parameters <- paste(
     c("apikey", "outputMode", "showSourceText",
       "maxRetrieve", "knowledgeGraph", "linkedData"),
@@ -400,7 +400,7 @@ text_relations <- function(
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/calls/text/TextGetRankedConcepts?"
+  service <- "gateway.watsonplatform.net/calls/text/TextGetRankedConcepts?"
   parameters <- paste(
     c("apikey", "outputMode", "showSourceText", "model"),
     c(api_key, output_mode, show_source, model),
@@ -463,7 +463,7 @@ text_taxonomy <- function(
 )
 {
   protocol <- "https://"
-  service <- "gateway-a.watsonplatform.net/calls/text/TextGetRankedTaxonomy?"
+  service <- "gateway.watsonplatform.net/calls/text/TextGetRankedTaxonomy?"
   parameters <- paste(
     c("apikey", "outputMode", "showSourceText", "maxRetrieve", "knowledgeGraph",
       "sentiment", "model", "coreference", "disambiguate", "linkedData",
